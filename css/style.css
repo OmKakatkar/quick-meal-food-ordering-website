@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(245, 245, 245);
     color: black;
@@ -17,7 +21,7 @@ body {
     --link-hover-color: white;
     --navbar-color: rgb(61, 35, 35);
     --navbar-height: 10vh;
-    --home-height: 90vh;
+    --home-height: 75vh;
     --navbar-item-padding: 20px;
 }
 
@@ -25,13 +29,14 @@ body {
 #navbar {
     display: flex;
     align-items: center;
-    position: absolute;
+    position: sticky;
     height: var(--navbar-height);
     width: 100%;
     overflow: hidden;
     margin-bottom: 1.5rem;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 #navbar::before {
@@ -56,10 +61,6 @@ body {
     height: 4rem;
 }
 
-#logo img:hover {
-    cursor: pointer;
-}
-
 /* Navbar List */
 #navbar ul {
     display: flex;
@@ -82,7 +83,7 @@ body {
 /* Navbar Links */
 #navbar ul li a {
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: var(--primary-color);
 }
 
@@ -104,7 +105,7 @@ body {
     content: '';
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: calc(var(--home-height)+120vh);
     background: url(../images/bg/bg1.jpg) no-repeat center center/cover;
     z-index: -4;
 }
@@ -136,7 +137,7 @@ body {
 .services .box {
     background-color: rgba(175, 47, 47, 0.185);
     border: 2px solid var(--navbar-color);
-    margin: 5px;
+    margin: 20px;
     border-radius: 10px;
 }
 
@@ -166,11 +167,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .clients img {
-    height: 12vh;
-    margin: 20px;
+    height: 5rem;
+    padding: 1.5rem;
+    overflow: hidden;
 }
 
 /* Contact Section */
@@ -196,25 +199,44 @@ body {
 }
 
 #contact-box form {
-    width: 40%;
+    width: 30%;
 }
 
 #contact-box input,
 #contact-box textarea {
     width: 100%;
-    padding:0.5rem;
+    padding: 0.5rem;
     border-radius: 4px;
     border-style: none;
 }
+
+#contact-box textarea {
+    resize: none;
+}
+
+
 
 #contact-box label {
     font-size: 1.1rem;
 }
 
+#contact-box .btn {
+    width: 35%;
+}
+
+#contact-box .btn:hover {
+    border-style: none;
+}
+
+/* Footer */
 footer div {
     text-align: center;
     background-color: black;
     color: white;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 /* Utility Classes */

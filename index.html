@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quick Meals | Home</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1207px)" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
@@ -18,13 +19,13 @@
             <img src="./images/logos/logo.png" alt="Logo">
         </div>
         <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">About Us</a></li>
-            <li class="item"><a href="#">Contact Us</a></li>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#service">Services</a></li>
+            <li class="item"><a href="#client">Clients</a></li>
+            <li class="item"><a href="#call">Contact Us</a></li>
         </ul>
     </nav>
-    <section class="home">
+    <section class="home" id="home">
         <h1 class="primary-heading">Welcome to Quick Meals</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsa error reprehenderit vel omnis? Officiis
             beatae doloremque perferendis aliquam possimus
@@ -32,7 +33,7 @@
         <button class="btn">Order Now</button>
     </section>
 
-    <section class="services-container">
+    <section class="services-container" id="service">
         <h1 class="primary-heading">Our Services</h1>
         <div class="services">
             <div class="box">
@@ -40,26 +41,32 @@
                 <h2 class="secondary-heading">Bulk Ordering</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cumque iste accusamus harum non
                     sed cupiditate illum totam deserunt beatae exercitationem ipsam, dolorem dignissimos consectetur!
-                    Quos sunt eligendi obcaecati iste Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam quidem illo saepe expedita odit, consectetur atque quisquam, asperiores eligendi, sint iste magni possimus sunt explicabo in aspernatur excepturi perspiciatis!</p>
+                    Quos sunt eligendi obcaecati iste Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                    aliquam quidem illo saepe expedita odit, consectetur atque quisquam, asperiores eligendi, sint iste
+                    magni possimus sunt explicabo in aspernatur excepturi perspiciatis!</p>
             </div>
             <div class="box">
                 <img src="./images/cards/2.png" alt="">
                 <h2 class="secondary-heading">Catering</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cumque iste accusamus harum non
                     sed cupiditate illum totam deserunt beatae exercitationem ipsam, dolorem dignissimos consectetur!
-                    Quos sunt eligendi obcaecati  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam quidem illo saepe expedita odit, consectetur atque quisquam, asperiores eligendi, sint iste magni possimus sunt explicabo in aspernatur excepturi perspiciatis!</p>
+                    Quos sunt eligendi obcaecati Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam
+                    quidem illo saepe expedita odit, consectetur atque quisquam, asperiores eligendi, sint iste magni
+                    possimus sunt explicabo in aspernatur excepturi perspiciatis!</p>
             </div>
             <div class="box">
                 <img src="./images/cards/3.png" alt="">
                 <h2 class="secondary-heading">Home Delivery</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, cumque iste accusamus harum non
                     sed cupiditate illum totam deserunt beatae exercitationem ipsam, dolorem dignissimos consectetur!
-                    Quos sunt eligendi obcaecati  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam quidem illo saepe expedita odit, consectetur atque quisquam, asperiores eligendi, sint iste magni possimus sunt explicabo in aspernatur excepturi perspiciatis!</p>
+                    Quos sunt eligendi obcaecati Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aliquam
+                    quidem illo saepe expedita odit, consectetur atque quisquam, asperiores eligendi, sint iste magni
+                    possimus sunt explicabo in aspernatur excepturi perspiciatis!</p>
             </div>
         </div>
     </section>
 
-    <section class="client-section">
+    <section class="client-section" id="client">
         <h1 class="primary-heading">Our Clients</h1>
         <div class="clients">
             <img src="./images/logos/logo1.png" alt="Client 1">
@@ -69,7 +76,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="call">
         <h1 class="primary-heading">Contact Us</h1>
         <div id="contact-box">
             <form action="">
@@ -92,12 +99,16 @@
                     <label for="message">Message:</label>
                     <textarea name="message" id="message" cols="message" rows="4"></textarea>
                 </div>
+                <div class="form-group">
+
+                </div>
+                <input class="btn" type="button" value="submit" id="submit">
             </form>
         </div>
     </section>
 
     <footer>
-        <div>Copyright &copy; Quick Meals all rights reserved</div>
+        <a href="#home"><div>Copyright &copy; Quick Meals all rights reserved</div></a>
     </footer>
 
 </body>
